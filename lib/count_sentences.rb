@@ -15,25 +15,6 @@ class String
   end
 
   def count_sentences
-    count = 0
-     split_sentence = self.split(".")
-     split_sentence.each do |phrase|
-       if sentence? 
-         count += 1 
-       end
-     end
-     split_sentence = self.split("?")
-     split_sentence.each do |phrase|
-       if question?
-         count += 1 
-       end
-     end
-     split_sentence = self.split("!")
-     split_sentence.each do |phrase|
-       if exclamation?
-         count += 1 
-       end
-     end
-     count
+    self.scan(/[^\.!?]+[\.!?]/).map(&:strip).count
   end
 end
