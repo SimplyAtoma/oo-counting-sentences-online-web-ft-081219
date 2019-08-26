@@ -17,8 +17,6 @@ class String
   def count_sentences
     count = 0
      split_sentence = self.split(".")
-     split_sentence = split_sentence.split("!")
-     split_sentence = split_sentence.split("?")
      split_sentence.each do |phrase|
        if phrase.sentence? 
          count += 1 
