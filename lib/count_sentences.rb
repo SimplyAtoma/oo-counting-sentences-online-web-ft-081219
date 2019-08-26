@@ -21,10 +21,10 @@ class String
        if phrase.sentence? 
          count += 1 
        end
-       if phrase.question?
+       if question?
          count += 1 
        end
-       if phrase.exclamation?
+       if exclamation?
          count += 1 
        end
        puts phrase"\n"
