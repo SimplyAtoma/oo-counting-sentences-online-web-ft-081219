@@ -18,7 +18,7 @@ class String
     count = 0
      split_sentence = self.split(".")
      split_sentence.each do |phrase|
-       if phrase.sentence? 
+       if sentence? 
          count += 1 
        end
      end
