@@ -27,8 +27,6 @@ class String
        if exclamation?
          count += 1 
        end
-       puts phrase"\n"
-       binding.pry
      end
      count
   end
